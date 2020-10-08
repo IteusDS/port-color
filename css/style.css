@@ -435,6 +435,7 @@ z-index: 3;
       background-color: var(--text-color);
       justify-content: space-between;
       margin: 10px auto 60px auto;
+      margin-bottom: 20px;
       display: flex;
      
 
