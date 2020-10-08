@@ -422,7 +422,7 @@ z-index: 3;
   .text-about{
       flex: 3;
       color: #252525;
-max-width: 600ch;
+
    flex: 3;
       padding: 10px 40px;
  flex-basis: 0;
@@ -434,7 +434,7 @@ max-width: 600ch;
   .contato-about{
       background-color: var(--text-color);
       justify-content: space-between;
-      margin: 220px auto;
+      margin: 30px auto;
       display: flex;
      
 
