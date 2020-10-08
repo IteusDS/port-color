@@ -434,7 +434,7 @@ z-index: 3;
   .contato-about{
       background-color: var(--text-color);
       justify-content: space-between;
-      margin: 30px auto;
+      margin: 10px auto 60px auto;
       display: flex;
      
 
