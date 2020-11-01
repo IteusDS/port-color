@@ -14,14 +14,22 @@ body{
 
 /* teste */
 
+/*
+.boxtwo{
+    content: " ";
+    max-width: 300px;
+    height: 5px;
+    background-color: #000;
+    color: #000;
+    display: inline-block;
+    animation-name: moveup;
+    animation-duration: 5s;
+    z-index: 10;
+  margin: 10px 10px 10px 10px;
+    
+}
 
-
-
-
-
-
-
-
+*/
 
 
 /* fim teste*/
@@ -177,6 +185,14 @@ html {
     z-index: 10;
 }
 
+
+
+
+.header-text h1:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.8));
+}
+
 h4{
     color: var(--text-color);
 }
@@ -197,7 +213,7 @@ h3::after {
 	display: block;
 	width: 5em;
 	height: 4px;
-	background: var(--maincolor);
+	background: var(--maincolor3);
     margin: 10px auto;
     z-index: 10;
 }
@@ -290,8 +306,15 @@ z-index: 3;
 .header-text{
     max-width: 920px;
     margin: 0 auto;
+
+
 }
 
+.header-text h1{
+    animation: fadein 5s linear;
+     
+    transition: all 2s ease;
+}
 .intro-site h1{
 
 
@@ -595,7 +618,7 @@ border-width: 5px;}
 
 .projects{
     padding-top: 150px;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     max-width: 980px;
     margin-bottom: 10em;
@@ -609,13 +632,14 @@ border-width: 5px;}
 	width: 5em;
 	height: 4px;
 	background: var(--maincolor);
-    margin: 10px auto;
+    margin: 10px ;
     z-index: 10;
   
 }
 
 .projects h2{
     font-size: 36px;
+    text-transform: uppercase;
    
 }
 
@@ -700,6 +724,7 @@ text-align: left;
 
     .skills-container h2{
         font-size: 36px;
+        text-transform: uppercase;
     }
 
 .skills-container{
@@ -853,6 +878,7 @@ border-radius: 50px 50px;}
 }
 .certified-container h2{
     font-size: 36px;
+    text-transform: uppercase;
 
 }
 
@@ -861,7 +887,7 @@ border-radius: 50px 50px;}
     display: block;
     width: 5em;
     height: 4px;
-    background: var(--maincolor);
+    background: var(--maincolor3);
     margin: 10px 0;
     z-index: 10;
   
@@ -1041,6 +1067,7 @@ form{
             max-width: 70%;
             flex: 1;
             text-align: center;
+            text-transform: uppercase;
         }
         .text-about h2:after{
             margin: 20px auto;
