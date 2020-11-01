@@ -988,6 +988,10 @@ form{
     margin: 0 auto;
     justify-content: center;
 }
+
+.projects h2::after {
+    margin: 20px auto;
+}
     }
 
 
