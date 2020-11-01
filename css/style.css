@@ -1,13 +1,128 @@
 :root{
-    --maincolor: #00b0b2;
+    --maincolor: #fdbf22;
    
     --text-color: #FFF;
     --maincolor2:  #38b6ff;
     --maincolor3: #252525;
+    --optiontwo: #000;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+  
+
+  }
+
+/* teste */
+
+
+
+
+.boxone {
+    top: 300px;
+    left:35%;
+  width: 10vh ;
+  height: 10vh ;
+ border-style: solid;
+ border-style: solid;
+ border-color: rgb(22, 22, 22);
+ background-color:  rgb(22, 22, 22);
+  position: absolute;
+  border-radius: 0.5vh;
+  animation: secondmove  5s alternate-reverse infinite;
+  transition: all 0.7s ease;
+}
+
+@keyframes secondmove {
+from{top:450px;}
+50% {top: 250px !important} /* ignored */
+to{top:250px;}
 }
 
 
+.boxtwo {
+  top: 300px;
+  left:25%;
+width: 15vh ;
+height: 15vh ;
+border-style: solid;
+border-color: #2D2E2C;
+background-color: #2D2E2C;
+position: absolute;
+border-radius: 0.5vh;
+animation: smove 5s alternate-reverse infinite;
+transition: all 0.7s ease;
+z-index: 5;
 
+}
+
+
+@keyframes smove {
+  from{top:450px;}
+  50% {top: 250px !important} /* ignored */
+  to{top:300px;}
+    }
+
+    .boxone:hover{
+     
+      -webkit-transform: rotateZ(-30deg);
+      -ms-transform: rotateZ(-30deg);
+      transform: rotateZ(-30deg);
+      
+  }
+
+  .boxtwo:hover{
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+  }
+
+  .boxtree:hover{
+      -webkit-transform: rotateZ(-30deg);
+      -ms-transform: rotateZ(-30deg);
+      transform: rotateZ(-30deg);
+      
+  }
+
+
+.boxtree {
+  top: 300px;
+  left:12%;
+width: 20vh ;
+height: 20vh ;
+border-style: solid;
+border-color: rgb(22, 22, 22);
+background-color:  rgb(22, 22, 22);
+position: absolute;
+border-radius: 0.5vh;
+animation: ssmove 5s alternate-reverse infinite;
+transition: all 0.7s ease;
+}
+
+@keyframes ssmove {
+  from{top:450px;}
+  50% {top: 250px !important} /* ignored */
+  to{top:350px;}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fim teste*/
 
 @keyframes fadein {
     from {
@@ -44,6 +159,10 @@
     -moz-transition: 0.2s ease-in;
     -o-transition: 0.2 ease-in;
     transition: 0.2 ease-in;
+  }
+  .height-web{
+      height: 100vh;
+      
   }
 
 html {
@@ -141,14 +260,9 @@ html {
       opacity:1;
       transform: scale(1);
     }
-/*
-.menu-bar{
-    position: absolute;
 
-    width: 960px;
-    text-align: center;  
-      margin: 0 auto;
-    display: flex;
+.menu-bar{
+  background-color: var(--optiontwo);
     
 
 
@@ -185,7 +299,7 @@ h3::after {
 	display: block;
 	width: 5em;
 	height: 4px;
-	background: var(--maincolor2);
+	background: var(--maincolor);
     margin: 10px auto;
     z-index: 10;
 }
@@ -226,6 +340,7 @@ header{
     flex: 1;
     align-self: center;
     z-index: 3;
+    
 }
 
 .header-menu ul li {
@@ -260,19 +375,32 @@ z-index: 3;
 
 
 .intro-site{
-    background-color: var(--maincolor);
+    background-image: url("/img/background-sobre.png");
 	background-size: cover;
 	color: #fff;
-	padding: 220px 0;
-    text-align: center;
+	padding: 180px 0;
+    text-align: right;
+    animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 10;
+
     
 
+}
+.header-text{
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 .intro-site h1{
 
-	text-transform: uppercase;
-    font-size: 2.5em;
+
+    font-size: 4.5em;
+    
+    color: var(--optiontwo);
+    z-index: 12;
  
 }
 
@@ -287,11 +415,13 @@ z-index: 3;
 .intro-site h1::after {
 	content: '';
 	display: block;
-	width: 5em;
+	width: 3em;
 	height: 4px;
-	background: #fff;
-    margin: 10px auto;
-    z-index: 10;
+	background: var(--optiontwo);
+    margin: 10px;
+    margin-left: 75%;
+    text-align: left;
+
   
 }
 
@@ -299,13 +429,16 @@ z-index: 3;
 .intro-site h1::before {
 	content: '';
 	display: block;
-	width: 5em;
+	width: 3em;
 	height: 4px;
-	background: #fff;
-    margin: 10px auto;
-    z-index: 10;
+	background: var(--optiontwo);
+    margin: 10px;
+    margin-left: 75%;
+    text-align: left;
   
 }
+
+
 .btn {
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -348,9 +481,9 @@ z-index: 3;
       line-height: 20px;
   }
 .fifth {
-    border-color: var(--text-color);
+    border-color: var(--optiontwo);
     border-radius: 0;
-    color: var(--text-color);
+    color: var(--optiontwo);
     position: relative;
     overflow: hidden;
     line-height: 1px;
@@ -374,7 +507,7 @@ z-index: 3;
             transform: translateX(-50%);
     width: 0;
     height: 100%;
-    background: #252525;
+    background: var(--optiontwo);
     z-index: -1;
     -webkit-transition: width 150ms ease-in-out;
     transition: width 150ms ease-in-out;
@@ -400,9 +533,13 @@ z-index: 3;
 
 
   .about-me-pic{
-      width: 35em;
+      width: 20em;
+      height: 20em;
       flex-grow: 1;
-      transition: all 3s;flex: 1;}
+      transition: all 3s;flex: 1;
+    filter: grayscale(100%);
+border-color: var(--maincolor);
+border-width: 5px;}
 
   .cont-about{
       margin: 0 auto;
@@ -432,13 +569,22 @@ z-index: 3;
   }
 
   .contato-about{
+     
       background-color: var(--text-color);
       justify-content: space-between;
-      margin: 10px auto 60px auto;
+      margin: 100px auto 60px auto;
       margin-bottom: 20px;
       display: flex;
      
 
+  }
+  .container-yellow{
+      background-image: url('/img/background-sobre.png');
+      margin: 100px auto;
+   
+
+  
+    
   }
 
     .text-about h2{
@@ -495,7 +641,13 @@ z-index: 3;
     .oferec-img{
         display: flex;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 140px;
+
+        display: flex;
+       
+        max-width: 960px;
+      
+        justify-content: center;
     }
 
 
@@ -660,7 +812,7 @@ max-width: 980px;
 padding: 50px auto;
 margin: 0 auto;
 
-background-color: var(--maincolor3);
+
 color: var(--text-color)
  ;
 }
@@ -758,7 +910,7 @@ border-radius: 50px 50px;}
 }
 
 #contato1{
-    background-color: var(--maincolor3);
+    background-color: var(--optiontwo);;
 }
 
 
@@ -766,6 +918,9 @@ border-radius: 50px 50px;}
     display: flex;
     margin: 0 auto;
     max-width: 960px;
+  
+    justify-content: center;
+
 }
 .certified-container h2{
     font-size: 36px;
@@ -787,7 +942,7 @@ border-radius: 50px 50px;}
 .certified-container p{
     font-size: 18px;
 }
-@media(MAX-WIDTH:500PX){
+@media(MAX-WIDTH:700PX){
 .container{
     flex-direction: column;
     max-width: 290px;
@@ -796,6 +951,22 @@ border-radius: 50px 50px;}
 }
 .intro-site h1{
     font-size: 1.8em;
+    
+}
+
+.about-me-pic{
+    width: 0px;
+    height: 0px;
+}
+.height-web{
+    height: 900px;
+}
+.intro-site{
+    text-align: center;
+}
+
+.intro-site h1:before{
+    margin-left: 10%;
 }
 input{
     margin: 20px auto;
@@ -826,10 +997,11 @@ visibility: hidden;
 }
 
 .text-about{
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 0px;
     max-width: 70%;
     flex: 1;
+    text-align: center;
 }
 
 .skills-container{
@@ -849,3 +1021,96 @@ form{
 
 }
     }
+
+
+    @media (MAX-WIDTH:1000PX){
+        .container{
+            flex-direction: column;
+            max-width: 900px;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+        }
+        .intro-site h1{
+            font-size: 1.8em;
+        }
+        input{
+            margin: 20px auto;
+        
+        }
+        button{
+            margin: 20px auto;
+        }
+        
+        .container-skills-all{
+        
+            
+        
+            margin: 0 auto;
+        
+        
+        }
+        
+        .container-skills{
+            max-width: 100%;
+            margin:0 auto;}
+        
+        .about-me-pic{
+            padding: 0px;
+            margin: 0;
+        width: 1px;
+        visibility: hidden;
+        }
+        .projects a{
+            width: 30%;
+            margin: 0 auto;
+        }
+        
+        .projects {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        
+        .text-about{
+            margin: 30px auto;
+            padding: 0px;
+            max-width: 70%;
+            flex: 1;
+            text-align: center;
+        }
+        .text-about h2:after{
+            margin: 20px auto;
+            max-width: 50%;
+        }
+        .class-student{
+            max-width: 600px;
+        }
+        .class-student img{
+            max-width: 50%;;
+        }
+        .skills-container{
+            max-width: 300px;
+        }
+        
+        
+        .certified-container{
+        width: 300px;
+            margin: 0 auto;
+        font-size: 14px;}
+        
+        form{
+         text-align: left;
+         left: 10%;
+        
+        
+        }
+        .text-ends {
+            margin: 30px 10vh;
+        }
+        .footer p{
+            margin: 10px 10vh;
+        }
+            }
+/* Animações */
+
+
