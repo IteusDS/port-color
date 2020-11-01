@@ -1030,12 +1030,28 @@ form{
             flex-wrap: nowrap;
             margin: 0 auto;
         }
+        .intro-site{
+            text-align: center;
+        }
+        .intro-site h1:before{
+            margin: 20px auto;
+        }
+        .intro-site h1:after{
+            margin: 20px auto;
+        }
         .intro-site h1{
-            font-size: 1.8em;
+            font-size: 3.8em;
         }
         input{
             margin: 20px auto;
         
+        }
+        .about-me-pic{
+            width: 0px;
+            height: 0px;
+        }
+        .height-web{
+            height: 900px;
         }
         button{
             margin: 20px auto;
@@ -1103,6 +1119,11 @@ form{
          left: 10%;
         
         
+        }
+        .container-proj{
+            flex-direction: row;
+            max-width: 800px;
+            flex-wrap: wrap;
         }
         .text-ends {
             margin: 30px 10vh;
