@@ -1067,7 +1067,7 @@ form{
             max-width: 70%;
             flex: 1;
             text-align: center;
-            text-transform: uppercase;
+            
         }
         .text-about h2:after{
             margin: 20px auto;
