@@ -939,6 +939,9 @@ visibility: hidden;
 .skills-container{
     max-width: 300px;
 }
+#sobre{
+    height: 80vh;
+}
 
 
 .certified-container{
