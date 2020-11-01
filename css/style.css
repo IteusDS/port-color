@@ -59,7 +59,9 @@ body{
       height: 80vh;
       
   }
- 
+ #sobre{
+     height: 60vh;
+ }
 
 html {
     scroll-behavior: smooth;
@@ -1028,6 +1030,7 @@ form{
             margin: 40px auto;
             max-width: 300px;
         }
+       
         
         .text-about{
             margin: 30px auto;
