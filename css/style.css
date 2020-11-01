@@ -56,9 +56,10 @@ body{
     transition: 0.2 ease-in;
   }
   .height-web{
-      height: 50vh;
+      height: 80vh;
       
   }
+ 
 
 html {
     scroll-behavior: smooth;
