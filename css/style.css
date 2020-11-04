@@ -995,6 +995,7 @@ form{
     }
 
 
+
     @media (MAX-WIDTH:1000PX){
         .container{
             flex-direction: column;
@@ -1114,7 +1115,7 @@ form{
         .footer p{
             margin: 10px 10vh;
         }
-            }
+            
 /* Animações */
 a:active{
     color: var(--maincolor);
